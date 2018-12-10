@@ -1,0 +1,31 @@
+
+
+create table Owner(
+  customer_id INT NOT NULL AUTO_INCREMENT,
+  Name char(25),
+  age int,
+  dateOfBirth char(25),
+  PRIMARY KEY (customer_Id)
+);
+
+create table Car(
+  Vehicle_id INT NOT NULL AUTO_INCREMENT,
+  MakeAndModel char(25),
+  Color char(25),
+  reg char(25),
+  NumberOFDoors int,
+  PRIMARY KEY (Vehicle_id)
+);
+
+create table orders(
+  OrderID INT NOT NULL AUTO_INCREMENT,
+  Date date,
+  CustID int,
+  CarID int,
+  PRIMARY KEY (OrderID)
+  
+);
+
+
+insert into orders(OrderID, Date, CustID, CarID)
+    values(1, '2015-12-17', '20', 10);
